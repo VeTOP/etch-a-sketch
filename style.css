@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+h1 {
+    text-align: center;
+    padding: 25px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+button {
+    font-family: 'Brush Script MT', cursive;
+}
+
 .container {
     margin: auto;
     width: 700px;
