@@ -15,9 +15,6 @@
 }
 
 .item {
-    /* width: 700/16px */
-    width: 44px;
-    height: 44px;
     margin: 1px;
     background-color: antiquewhite;
 }
