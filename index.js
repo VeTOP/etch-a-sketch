@@ -11,3 +11,10 @@ for (let i=0; i<16; i++){
         row.append(item);
     }
 }
+
+document.querySelector('.container').addEventListener('mouseover', function(e){
+    const target = e.target;
+    if (target.matches('.item')) {
+        target.style.backgroundColor = 'black';
+    }
+})
