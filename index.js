@@ -25,3 +25,10 @@ document.querySelector('.container').addEventListener('mouseover', function(e){
         target.style.backgroundColor = 'black';
     }
 })
+
+const items = document.querySelectorAll('.item');
+function shake(){
+    for (let z=0; z<(containerDensity*containerDensity); z++){
+        items[z].style.backgroundColor = 'antiquewhite'
+    }
+}

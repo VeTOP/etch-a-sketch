@@ -9,8 +9,10 @@ h1 {
     font-family: 'Brush Script MT', cursive;
 }
 
-button {
-    font-family: 'Brush Script MT', cursive;
+.thebuttons {
+    text-align: center;
+    padding-bottom: 20px;
+
 }
 
 .container {
