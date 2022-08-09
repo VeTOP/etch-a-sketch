@@ -23,10 +23,27 @@ function draw(){
 
 draw();
 
+let color;
+
+
+function random_item(items){
+return items[Math.floor(Math.random()*items.length)];    
+}
+
+var colors = ["black", "white", "gray", "silver", "maroon", "red", "purple", "fushsia", "green", "lime", "olive", "yellow", "navy", "blue", "teal", "aqua"];
+
+
+
 document.querySelector('.container').addEventListener('mouseover', function(e){
     const target = e.target;
     if (target.matches('.item')) {
-        target.style.backgroundColor = 'black';
+        if(document.getElementById('nigga').checked) {
+            color = "black";
+          }else if(document.getElementById('gay').checked) {
+            //make it rainbow in the future...
+            color = random_item(colors);
+          }
+        target.style.backgroundColor = color;
     }
 })
 
@@ -49,6 +66,14 @@ let items;
 function shake(){
     items = document.querySelectorAll('.item');
     for (let z=0; z<(containerDensity*containerDensity); z++){
-        items[z].style.backgroundColor = 'antiquewhite';
+        items[z].style.backgroundColor = 'white';
     }
+}
+
+function changeColorToBlack(){
+    color = "black";
+}
+
+function changeColorToRaibow(){
+    color = "pink";
 }
